@@ -2,56 +2,86 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Crisper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Crisper</title>
 
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/b7da1c6c8f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
-    <!-- Header Section -->
-    <header>
-       <div class="bg-red-100">
-        <div class="navbar max-w-7xl mx-auto">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Menu</a></li>
-                  <li><a>Rewards</a></li>
-                  <li><a>Location</a></li>
-                  <li><a>Gift Card</a></li>
-                  <li><a>Log In</a></li>
-                </ul>
-              </div>
-             <img class="w-[100px] mr-10" src="logo.png" alt="">
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-xl font-bold">
-                    <li><a>Menu</a></li>
-                    <li><a>Rewards</a></li>
-                    <li><a>Location</a></li>
-                    <li><a>Gift Card</a></li>
-                    <li><a>Log In</a></li>
-                </ul>
-              </div>
+  <!-- Header Section -->
+  <header>
+    <div class="bg-red-100">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
-            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Menu</a></li>
+              <li><a>Rewards</a></li>
+              <li><a>Location</a></li>
+              <li><a>Gift Card</a></li>
+              <li><a>Log In</a></li>
+            </ul>
           </div>
-       </div>
-    </header>
+          <img class="w-[100px] mr-10" src="logo.png" alt="">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl font-bold">
+              <li><a>Menu</a></li>
+              <li><a>Rewards</a></li>
+              <li><a>Location</a></li>
+              <li><a>Gift Card</a></li>
+              <li><a>Log In</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-end gap-10">
+          <button class="btn btn-error btn-outline"><i
+              class="fa-solid fa-bag-shopping text-blue-950 text-2xl"></i></button>
+          <button class="btn btn-error text-white">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <div class="text-center mt-10">
+      <h1 class="text-5xl font-bold text-error mb-3">CHICKEN CRISPER® COMBOS</h1>
+      <p class="text-xl font-bold"><span class="text-error">Menu</span> › Chicken Crisper® Combos</p>
+      <p class="text-2xl font-bold mt-3">Find everything from Our Big Mouth Burgers®, our always sizzling,Full on Fajitas and our famous CHICKEN CRISPER®</p>
+    </div>
+  
+    <!-- Menu Dropdown -->
+    <div class="flex justify-end mt-6 lg:mr-72">
+      <select class="select select-bordered">
+        <option disabled selected>Menu</option>
+        <option>Chicken Burger</option>
+        <option>Beef Burger</option>
+        <option>Veg Burger</option>
+      </select>
+    </div>
+
+  </main>
+
 </body>
 
 </html>
