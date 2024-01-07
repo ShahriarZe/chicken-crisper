@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chicken Crisper</title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -23,7 +24,7 @@
 
   <!-- Header Section -->
   <header>
-    <div class="bg-red-100">
+    <div class="bg-red-100 shadow-xl">
       <div class="navbar max-w-7xl mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
@@ -58,14 +59,14 @@
           <!-- CART -->
           <div class="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
+            <div class="drawer-content ">
               <!-- Page content here -->
               <label for="my-drawer-4" class="lg:ml-80"><a class="indicator tab tab-active">
                 <i class="fa-solid fa-bag-shopping text-3xl"></i> 
                 <span class="indicator-item badge font-bold">8</span>
               </a></label>
             </div> 
-            <div class="drawer-side z-10">
+            <div class="drawer-side z-10 ">
               <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
               <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                 <!-- Sidebar content here -->
@@ -95,9 +96,9 @@
     <div class="flex justify-end mt-6 lg:mr-72">
       <select class="select select-bordered">
         <option disabled selected>Menu</option>
-        <option>Chicken Burger</option>
-        <option>Beef Burger</option>
-        <option>Veg Burger</option>
+        <option>Chicken Soup</option>
+        <option>Fajitas</option>
+        <option>Chicken Masala</option>
       </select>
     </div>
 
@@ -109,15 +110,16 @@
 
 
       <!-- Card-1 -->
-      <div class="card  bg-base-100 shadow-xl">
+      <div class="card  bg-base-100 shadow-2xl">
         <figure class="px-10 pt-10">
           <img src="soup-bg.jpg" alt="Shoes" class="rounded-xl" />
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body">
           <h2 class="card-title">Chicken Soup</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p class="font-bold">100 $/each</p>
+          <p>Chicken served with rice & beans,tortilas,salsa and sour cream</p>
           <div class="card-actions w-full">
-            <button class="btn btn-error w-full">Add to Order</button>
+            <button class="btn btn-error w-full text-white">Add to Order</button>
             <button class="btn btn-error btn-outline w-full">Customize</button>
           </div>
         </div>
@@ -125,15 +127,16 @@
 
 
       <!-- Card-2 -->
-      <div class="card  bg-base-100 shadow-xl">
+      <div class="card  bg-base-100 shadow-2xl">
         <figure class="px-10 pt-10">
           <img src="pizza-bg.jpg" alt="Shoes" class="rounded-xl" />
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body">
           <h2 class="card-title">Fajitas</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p class="font-bold">200 $/each</p>
+          <p>Chicken served with rice & beans,tortilas,salsa and sour cream</p>
           <div class="card-actions w-full">
-            <button class="btn btn-error w-full">Add to Order</button>
+            <button class="btn btn-error w-full text-white">Add to Order</button>
             <button class="btn btn-error btn-outline w-full">Customize</button>
           </div>
         </div>
@@ -141,15 +144,16 @@
 
 
       <!-- Card-3 -->
-      <div class="card  bg-base-100 shadow-xl">
+      <div class="card  bg-base-100 shadow-2xl">
         <figure class="px-10 pt-10">
           <img src="salad-bg.jpg" alt="Shoes" class="rounded-xl" />
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body">
           <h2 class="card-title">Chicken Masala</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p class="font-bold">300 $/each</p>
+          <p>Chicken served with rice & beans,tortilas,salsa and sour cream</p>
           <div class="card-actions w-full">
-            <button class="btn btn-error w-full">Add to Order</button>
+            <button class="btn btn-error w-full text-white">Add to Order</button>
             <button class="btn btn-error btn-outline w-full">Customize</button>
           </div>
         </div>
