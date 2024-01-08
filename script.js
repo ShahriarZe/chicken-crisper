@@ -43,6 +43,7 @@ function updateCart() {
     // Quantity Adjustment
     const buttonsContainer = document.createElement("div");
     buttonsContainer.style.display = "flex";
+    buttonsContainer.style.gap = "20px";
     buttonsContainer.style.alignItems = "center";
 
     const decreaseButton = document.createElement("button");

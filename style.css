@@ -5,3 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000; /* Change the background color as needed */
+    color: #ffffff; /* Change the text color as needed */
+    padding: 5px 10px;
+    border-radius: 15px; /* Adjust the border-radius to control the curve */
+    font-weight: bold;
+    transform: rotate(-45deg);
+}
