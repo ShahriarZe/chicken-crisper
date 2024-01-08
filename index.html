@@ -69,9 +69,10 @@
             <div class="drawer-side z-10 ">
               <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
               <ul class="menu p-4 w-80 min-h-full bg-red-200 text-base-content">
-                <!-- Sidebar content here -->
-                <li><a>Sidebar Items 1</a></li>
-                <li><a>Sidebar Items 2</a></li>
+                <div id="sidebar" >
+                  <h2 class="font-bold text-center">Your Cart</h2>
+                  <ul id="cart-list"></ul>
+                </div>
               </ul>
             </div>
           </div>
@@ -110,50 +111,48 @@
 
 
       <!-- Card-1 -->
-      <div class="card  bg-base-100 shadow-2xl hover:cursor-pointer">
+      <div class="card bg-base-100 shadow-2xl hover:cursor-pointer">
         <figure class="px-10 pt-10">
-          <img src="soup-bg.jpg" alt="Shoes" class="rounded-xl" />
+          <img src="soup-bg.jpg" alt="Chicken Soup" class="rounded-xl" />
         </figure>
         <div class="card-body">
           <h2 class="card-title">Chicken Soup</h2>
           <p class="font-bold">100 $/each</p>
-          <p>Chicken served with Rice & Beans,Tortilas,Salsa and Sour Cream</p>
+          <p>Chicken served with Rice & Beans, Tortillas, Salsa, and Sour Cream</p>
           <div class="card-actions w-full">
-            <button class="btn btn-error w-full text-white">Add to Order</button>
+            <button class="btn btn-error w-full text-white" onclick="addToCart('Chicken Soup', 100, 'soup-bg.jpg', this)">Add to Order</button>
             <button class="btn btn-error btn-outline w-full">Customize</button>
           </div>
         </div>
       </div>
-
-
+    
       <!-- Card-2 -->
-      <div class="card  bg-base-100 shadow-2xl hover:cursor-pointer">
+      <div class="card bg-base-100 shadow-2xl hover:cursor-pointer">
         <figure class="px-10 pt-10">
-          <img src="pizza-bg.jpg" alt="Shoes" class="rounded-xl" />
+          <img src="pizza-bg.jpg" alt="Fajitas" class="rounded-xl" />
         </figure>
         <div class="card-body">
           <h2 class="card-title">Fajitas</h2>
           <p class="font-bold">200 $/each</p>
-          <p>Chicken served with Rice & Beans,Tortilas,Salsa and Sour Cream</p>
+          <p>Chicken served with Rice & Beans, Tortillas, Salsa, and Sour Cream</p>
           <div class="card-actions w-full">
-            <button class="btn btn-error w-full text-white">Add to Order</button>
+            <button class="btn btn-error w-full text-white" onclick="addToCart('Fajitas', 200, 'pizza-bg.jpg', this)">Add to Order</button>
             <button class="btn btn-error btn-outline w-full">Customize</button>
           </div>
         </div>
       </div>
-
-
+    
       <!-- Card-3 -->
-      <div class="card  bg-base-100 shadow-2xl hover:cursor-pointer">
+      <div class="card bg-base-100 shadow-2xl hover:cursor-pointer">
         <figure class="px-10 pt-10">
-          <img src="salad-bg.jpg" alt="Shoes" class="rounded-xl" />
+          <img src="salad-bg.jpg" alt="Chicken Masala" class="rounded-xl" />
         </figure>
         <div class="card-body">
           <h2 class="card-title">Chicken Masala</h2>
           <p class="font-bold">300 $/each</p>
-          <p>Chicken served with Rice & Beans,Tortilas,Salsa and Sour Cream</p>
+          <p>Chicken served with Rice & Beans, Tortillas, Salsa, and Sour Cream</p>
           <div class="card-actions w-full">
-            <button class="btn btn-error w-full text-white">Add to Order</button>
+            <button class="btn btn-error w-full text-white" onclick="addToCart('Chicken Masala', 300, 'salad-bg.jpg', this)">Add to Order</button>
             <button class="btn btn-error btn-outline w-full">Customize</button>
           </div>
         </div>
@@ -161,6 +160,8 @@
     </div>
 
   </main>
+
+  <script src="script.js"></script>
 
 </body>
 
