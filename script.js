@@ -1,4 +1,5 @@
 let cartItems = [];
+let totalItemsElement = document.getElementById("totalItems");
 
 function addToCart(itemName, itemPrice, itemImage, addButton) {
   const existingItem = cartItems.find(item => item.name === itemName);
@@ -16,13 +17,16 @@ function updateCart() {
   const cartList = document.getElementById("cart-list");
   cartList.innerHTML = "";
 
+  let totalItems = 0;
   let totalPrice = 0;
 
   cartItems.forEach(item => {
+    totalItems += item.quantity;
+
     const listItem = document.createElement("li");
     listItem.style.display = "flex";
     listItem.style.alignItems = "center";
-    listItem.style.justifyContent = "space-between";  // Separate items
+    listItem.style.justifyContent = "space-between";  
 
     // Item Image
     const itemImage = document.createElement("img");
@@ -63,6 +67,8 @@ function updateCart() {
     totalPrice += item.price * item.quantity;
   });
 
+  totalItemsElement.textContent = totalItems.toString();  
+
   const totalElement = document.createElement("li");
   totalElement.innerHTML = `<strong>Total: ${totalPrice}$</strong>`;
   cartList.appendChild(totalElement);
@@ -74,7 +80,7 @@ function adjustQuantity(itemName, quantityChange) {
   if (existingItem) {
     existingItem.quantity += quantityChange;
     if (existingItem.quantity < 1) {
-      existingItem.quantity = 1; // Prevent negative quantities
+      existingItem.quantity = 1; 
     }
   }
 
